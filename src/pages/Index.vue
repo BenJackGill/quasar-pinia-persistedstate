@@ -9,10 +9,10 @@
     <q-form @submit="handleSubmit">
       <p>Change First Name</p>
       <q-input v-model="firstNameInputValue" filled outline />
-      <q-btn label="Submit" type="submit" />
+      <q-btn label="Submit Name Change to Firebase" type="submit" />
     </q-form>
-    <q-btn label="Update" @click="handleUpdate" />
-    <q-btn label="Console Log" @click="handleLog" />
+    <q-btn label="Update Name on Screeen" @click="handleUpdate" />
+    <q-btn label="Console Log Name Details" @click="handleConsoleLog" />
   </q-page>
 </template>
 
@@ -27,9 +27,6 @@ const firstName = ref<string>();
 onMounted(async () => {
   firstName.value = await getFirstNameTask.perform();
 });
-// userStore.$subscribe((mutation, state) => {
-//   firstName.value = state.user.firstName;
-// });
 const firstNameInputValue = ref<string>();
 const handleSubmit = async () => {
   if (firstNameInputValue.value) {
@@ -39,9 +36,9 @@ const handleSubmit = async () => {
 const handleUpdate = () => {
   firstName.value = userStore.user.firstName;
 };
-const handleLog = async () => {
-  console.log('store:', userStore.user.firstName);
+const handleConsoleLog = async () => {
+  console.log('Current store value:', userStore.user.firstName);
   const currentValue = await getFirstNameTask.perform();
-  console.log('get:', currentValue);
+  console.log('Value returned from getFirstName:', currentValue);
 };
 </script>

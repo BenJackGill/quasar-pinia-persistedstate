@@ -3,7 +3,12 @@
     <q-card-section>
       <!-- Login Form -->
       <q-form @submit="handleSubmit">
-        <h5 class="text-center q-mt-md q-mb-lg">Log in to your account</h5>
+        <div class="text-center q-mt-md q-mb-lg">
+          <strong>Email:</strong> test@gmail.com
+        </div>
+        <div class="text-center q-mt-md q-mb-lg">
+          <strong>Password:</strong> fakepassword
+        </div>
         <v-input
           v-model="email"
           type="email"
