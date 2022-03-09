@@ -7,13 +7,12 @@ import { getAnalytics } from 'firebase/analytics';
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: 'AIzaSyAat4FCff5i2UXz65MxtGtG0DsvIj4WN78',
-  authDomain: 'agentcake-app.firebaseapp.com',
-  projectId: 'agentcake-app',
-  storageBucket: 'agentcake-app.appspot.com',
-  messagingSenderId: '626584447727',
-  appId: '1:626584447727:web:7e2d5c525b00f6da0f091a',
-  measurementId: 'G-X2JQRRYQV3',
+  apiKey: 'AIzaSyDqFZ0YdAaDhp6ZdGy49u4RdVY7yKXMNt0',
+  authDomain: 'testing-b3185.firebaseapp.com',
+  projectId: 'testing-b3185',
+  storageBucket: 'testing-b3185.appspot.com',
+  messagingSenderId: '178176364982',
+  appId: '1:178176364982:web:590b057be5552864d97117',
 };
 
 // Initialize Firebase
