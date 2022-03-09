@@ -37,8 +37,8 @@ const handleUpdate = () => {
   firstName.value = userStore.user.firstName;
 };
 const handleConsoleLog = async () => {
-  console.log('Current store value:', userStore.user.firstName);
+  console.log('firstName returned from Pinia store:', userStore.user.firstName);
   const currentValue = await getFirstNameTask.perform();
-  console.log('Value returned from getFirstName:', currentValue);
+  console.log('firstName returned from getFirstName:', currentValue);
 };
 </script>
